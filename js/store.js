@@ -8,8 +8,9 @@ const KEY = 'state';
 const DEFAULTS = {
   goals: { kcal: 2200, prot: 120, carb: 250, fat: 70 },
   days: {},          // { "2026-11-05": [ {id, name, meal, kcal, prot, carb, fat} ] }
-  food: {},        // Recettes de cuisine
-  sport: {},        // Programme et suivi sport
+  recipe: {},        // Recettes de cuisine
+  food: {},          // Aliments
+  sport: {},         // Programme et suivi sport
   // water: {},      // exemple : une future fonctionnalité "Eau"
   // weight: [],     // exemple : une future fonctionnalité "Poids"
 };
