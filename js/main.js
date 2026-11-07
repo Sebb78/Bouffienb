@@ -1,9 +1,11 @@
 // Point d'entrée. Pour ajouter une fonctionnalité : importe-la et ajoute-la à FEATURES.
 import diary from './features/diary.js';
 import settings from './features/settings.js';
+import settings from './features/food.js';
+import settings from './features/sport.js';
 import { initStore, subscribe } from './store.js';
 
-const FEATURES = [diary, settings];
+const FEATURES = [diary, settings, food, sport];
 
 async function start() {
   await initStore();   // charge les données depuis IndexedDB avant d'afficher quoi que ce soit

@@ -2,10 +2,10 @@
 // donc valables sous /nutritrack/ comme à la racine.
 // Stratégie : réponse immédiate depuis le cache, puis mise à jour en arrière-plan
 // (la nouvelle version s'applique au lancement suivant). Change VERSION pour vider l'ancien cache.
-const VERSION = 'bouffienb-v1';
+const VERSION = 'bouffienb-v1.1';
 const FILES = ['./', 'index.html', 'manifest.webmanifest', 'css/style.css',
   'js/main.js', 'js/store.js', 'js/utils.js', 'js/features/diary.js', 'js/features/settings.js',
-  'icons/icon-180.png', 'icons/icon-192.png', 'icons/icon-512.png'];
+  'icons/icon-180.png', 'icons/icon-192.png', 'icons/icon-512.png, js/features/food.js, js/features/sport.js'];
 
 self.addEventListener('install', e => e.waitUntil(
   caches.open(VERSION)
