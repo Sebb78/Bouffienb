@@ -5,7 +5,7 @@
 const VERSION = 'bouffienb-v1.1';
 const FILES = ['./', 'index.html', 'manifest.webmanifest', 'css/style.css',
   'js/main.js', 'js/store.js', 'js/utils.js', 'js/features/diary.js', 'js/features/settings.js',
-  'icons/icon-180.png', 'icons/icon-192.png', 'icons/icon-512.png, js/features/food.js, js/features/sport.js'];
+  'icons/icon-180.png', 'icons/icon-192.png', 'icons/icon-512.png', 'js/features/food.js', 'js/features/sport.js'];
 
 self.addEventListener('install', e => e.waitUntil(
   caches.open(VERSION)
