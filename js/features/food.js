@@ -8,7 +8,9 @@ function mount(el) { /* construit le HTML une fois */
     root = el;
     el.innerHTML = 
     `<header class="top"><h1>Recettes</h1></header>
+    <form class="f" method="dialog">
     <label><input name="search" required autocomplete="off" placeholder="Rechercher une recette"></label>
+    </form>
     <div data-ref="meals"></div>`
 }
 function render()  { /* met à jour l'affichage */ }
