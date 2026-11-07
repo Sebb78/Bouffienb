@@ -1,8 +1,8 @@
 // Point d'entrée. Pour ajouter une fonctionnalité : importe-la et ajoute-la à FEATURES.
 import diary from './features/diary.js';
 import settings from './features/settings.js';
-import settings from './features/food.js';
-import settings from './features/sport.js';
+import food from  './features/food.js';
+import sport from './features/sport.js';
 import { initStore, subscribe } from './store.js';
 
 const FEATURES = [diary, settings, food, sport];
