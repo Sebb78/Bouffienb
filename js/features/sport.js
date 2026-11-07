@@ -5,4 +5,4 @@ import { $ } from '../utils.js';
 function mount(el) { /* construit le HTML une fois */ }
 function render()  { /* met à jour l'affichage */ }
 
-export default { id: 'sport', title: 'Sport', icon: '⚙️', mount, render };
+export default { id: 'sport', title: 'Sport', icon: '🏃', mount, render };
