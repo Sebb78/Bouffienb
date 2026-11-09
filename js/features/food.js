@@ -19,15 +19,17 @@ function mount(el) { /* construit le HTML une fois */
       <h3>Ajouter une recette</h3>
       <form class="f" method="dialog">
         <label>Nom<input name="name" required autocomplete="off" placeholder="Ex. Bouillabesse"></label>
-        <div class="g3">
-          <label>Protéines (g)<input name="prot" type="number" inputmode="decimal" min="0" step="any"></label>
-          <label>Glucides (g)<input name="carb" type="number" inputmode="decimal" min="0" step="any"></label>
-          <label>Lipides (g)<input name="fat" type="number" inputmode="decimal" min="0" step="any"></label>
-        </div>
         <div class="row"><button type="button" class="btn" data-act="cancel">Annuler</button><button class="btn p">Enregistrer</button></div>
       </form>
     </div></dialog>
     `;
+
+    // Actions
+    el.addEventListener('click', e => {
+        const act = e.target.closest('[data-act]')?.dataset.act;
+        if (act === 'add') openAdd(dlg, form);
+    });
+
 }
 function render()  { /* met à jour l'affichage */ 
     /*ref('recipe').innerHTML = RECIPE.map(m => {
