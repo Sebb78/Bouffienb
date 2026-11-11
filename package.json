@@ -1,0 +1,17 @@
+{
+  "name": "bouffienb",
+  "version": "1.0.0",
+  "description": "Suivi nutritionnel 100 % local : aucune donnée n'est envoyée nulle part, tout est dans IndexedDB (base `bouffienb`) sur l'appareil. Pas de build, pas de dépendance, pas de serveur applicatif.",
+  "main": "sw.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "eslint": "^9.39.5",
+    "globals": "^17.14.0"
+  }
+}
